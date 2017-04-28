@@ -1,0 +1,64 @@
+body {
+	background: rgb(184,193,164);
+	font-family:"HelveticaLTStdLight";
+	font-size:16px;
+}
+nav {
+	width:50%;
+	/*text-align: right;*/ /***Only moves the text not entire element with width and height**/
+	float:right; /***moves the entire element with width and height**/
+}
+nav ul {
+	list-style: none;
+ 	margin: 32px;
+}
+nav ul li {
+	display: inline;
+	margin: 10px;
+	background:rgb(190,88,180);
+	padding:20px;
+	color:#FFF;
+}
+nav ul li ul {
+	display:none;
+	position: absolute;
+	margin: 19px 0 8px 0;
+    padding: 34px 0 8px 0;
+}
+nav ul li ul li {
+	display: inline;
+	background:rgb(255,183,111);
+}
+nav ul li:hover ul {
+	display:block;
+}
+nav ul li:hover {
+	background:rgb(203,181,112);
+}
+nav ul li ul li:hover {
+	background:rgb(86,129,228);
+}
+div {
+	clear: both;
+	margin: 51px;
+    padding: 38px
+}
+section {
+	width: 48%;
+	background:rgb(60,149,183);
+}
+section:nth-child(1) {
+	float: left;
+} 
+section:nth-child(2) {
+	float: right;
+	clear: right;
+}
+section p {
+	padding: 0 20px 0 20px;
+} 
+footer {
+	clear: both;
+	padding:30px;
+	background: rgb(155,174,219);
+}

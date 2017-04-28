@@ -1,0 +1,59 @@
+/*  -> By default all the div's has static position.
+	-> Relative:- change the position of satic element in the DOM flow.
+	-> Absolute:- change the position of the element in the non-static (relative) parent element;
+	My Observation:- relative position is in the parent element and absolute position is in the child element
+*/
+body {
+	background: rgb(192,192,192);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+div {
+	border:2px solid cyan;
+	margin: 25px;
+	padding:25px;
+}
+span {
+	//float:right;
+}
+div p:nth-child(2) {
+	background:yellow;
+}
+div#d1 p:nth-child(2) {
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 10px;
+}
+div#d2 {
+	position: relative;
+	top: 37px;
+	/* right: 31px; */
+	left: 33px;
+}
+div#d2 p:nth-child(2) {
+	position:relative;
+	top:10px;
+	right:25px;
+}
+div#d3 {
+	position: absolute;
+	top: 0;
+    right: 0;
+	background:pink;
+}
+div#d41 {
+	position:absolute;
+	top: 132px;
+	left: 203px;
+	background: rgb(132,132,132);
+}
+div#d5 {
+	position:relative;
+}
+div#d52 {
+	position:absolute;
+	top: 132px;
+	left: 203px;
+	background:orange;
+}

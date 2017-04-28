@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+jQuery(document).on('scroll',function(){
+		if(jQuery(document).scrollTop()>1){ 
+			jQuery('header').removeClass('static').addClass('sticky');
+            jQuery('.large').addClass('close');
+            jQuery('.small').removeClass('close');
+		}
+		else{
+			jQuery('header').removeClass('sticky').addClass('static');
+            jQuery('.small').addClass('close');
+            jQuery('.large').removeClass('close');
+		}
+	});
+</script>
+<style>
+.container{
+    height:750px;
+    background:#eee;
+}
+header{
+	width: 100%;
+	background: #fff;
+    position:fixed;
+    top:0;
+    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out;
+}
+header.static{
+	height: 90px;
+}
+header.sticky{
+	height: 50px;
+    background: #fff;
+}
+.large,.small{
+    transition: all 0.4s ease-in-out;
+    position:absolute;
+    left:0;
+}
+.large{
+    top:15px;
+    width:243px;
+    height:52px;
+}
+.small{
+    top:5px;
+    width:138px;
+    height:38px;
+}
+.close {
+    width:0;
+    height:0;
+    opacity:0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="static">
+        <a href="#" class="image">
+            <img src="http://placehold.it/243x52" class="large" />
+            <img src="http://placehold.it/138x38" class="small close" />
+        </a>
+    </header>
+</div>
+
+</body
+</html>

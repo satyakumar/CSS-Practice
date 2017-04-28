@@ -1,0 +1,46 @@
+body {
+	font-family: 'Itim', cursive;
+	background: rgb(255, 160, 82);
+	font-size:16px;
+}
+.main div {
+	background: rgb(255, 248, 242);
+	width: 19%;
+	height: 355px;
+	text-transform: capitalize;
+	overflow: hidden;
+	float: left;
+	margin: 4px;
+}
+img {
+	max-width:100%;
+}
+h3 {
+	text-align:right;
+	font-size: 135%;
+	color: rgb(227, 108, 10);
+}
+p {
+	text-indent: 12px;
+	margin-left: 15px;
+}
+@media (max-width: 957px) {
+	.main div {
+		width:24%;
+	}
+}
+@media (max-width: 831px) {
+	.main div {
+		width: 32%;
+	}
+}
+@media (max-width: 632px) {
+	.main div {
+		width:46%;
+	}
+}
+@media (max-width:357px) {
+	.main div {
+		height: 260px;
+	}
+}

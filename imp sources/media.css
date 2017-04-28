@@ -1,0 +1,53 @@
+/* Mobile*/
+@media only screen and (max-width : 767px) {
+	/*style goes here*/
+}
+/* Mobile iphone 5 portrait */
+@media only screen and (min-width : 320px) and (max-width : 568px) and (orientation : portrait) {
+	/*style goes here*/
+}
+/* Mobile iphone 6 portrait */
+@media only screen and (min-width : 569px) and (max-width : 667px) and (orientation : portrait) {
+	/*style goes here*/
+}
+/* Mobile iphone 6 plus portrait */
+@media only screen and (min-width : 668px) and (max-width : 736px) and (orientation : portrait) {
+	/*style goes here*/
+}
+
+/* Mobile iphone 5 landscape */
+@media only screen and (min-width : 320px) and (max-width : 568px) and (orientation : landscape) {
+	/*style goes here*/
+}
+/* Mobile iphone 6 landscape */
+@media only screen and (min-width : 569px) and (max-width : 667px) and (orientation : landscape) {
+	/*style goes here*/
+}
+/* Mobile iphone 6 puls plus landscape */
+@media only screen and (min-width : 668px) and (max-width : 736px) and (orientation : landscape) {
+	/*style goes here*/
+}
+
+/* iPads (portrait) */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	/*style goes here*/
+}
+
+/* iPads (landscape) */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+	/*style goes here*/
+}
+
+/* Bigger screen */
+@media only screen and (min-width : 1600px) {
+	/*style goes here*/
+}
+/*Extra bigger screen */
+@media only screen and (min-width : 1920px) {
+	/*style goes here*/
+}
+/* For IE style*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/* IE10+ specific styles go here */
+    /*style goes here*/
+}

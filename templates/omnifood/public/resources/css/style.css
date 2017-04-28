@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+/*==============Genaral components============*/
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+h1 {
+    color: white;
+    margin-top: 0;
+    font-weight: normal;
+}
+section {
+    padding: 50px 0px;
+}
+p {
+    color: #555;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    text-align: center;
+}
+figure {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #e67e22;
+}
+a:hover {
+    color: #FFF;
+}
+a:link {
+    transition: background-color 0.2s;
+}
+img {
+    max-width: 100%;
+}
+/*==============Header components=============*/
+header { 
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.header-middle {
+    position: absolute;
+    top: 30%;
+}
+.header-btns span {
+    border-radius: 200px;
+    margin-top: 35px;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 94%;
+}
+.header-btns span:hover {
+    background-color: #e67e22;
+    color: #FFF;
+}
+nav .right {
+    max-width: 80%;
+}
+nav .left {
+    max-width: 20%;
+}
+nav img {
+    height: 100px;
+    width: auto;
+}
+nav ul li {
+    color:white;
+    margin: 0 22px;
+    font-size: 74%;
+}
+/*==============Good food components=============*/
+#good-food h1,#how-it-works h1,#cities h1,#testimonials h1,#plans h1 {
+    color: #504848;
+    font-size: 155%;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+#good-food p {
+    line-height: 30px;
+}
+#good-food h5 {
+    margin: 14px 0;
+    font-size: 95%;
+    color: #3a3636;
+}
+#good-food .section p {
+    font-size: 85%;
+}
+#good-food i {
+    display: block;
+}
+#good-food .icon-big {
+    font-size: 3.5em;
+    color: darkorange;
+    margin-right: 25px;
+}
+#good-food #section1-header {
+    margin-bottom: 30px;
+}
+#good-food #section1-header h1:after, #how-it-works h1:after,#cities h1:after,#testimonials h1:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/*==================Meals Section Components===========*/
+#meals ul {
+    display: inline-block;
+}
+#meals ul li {
+    width: 25%;
+    float: left;
+    //height: 25px;
+}
+#meals figure {
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+}
+#meals img {
+    opacity: 0.7;
+    height: auto;
+	-webkit-transform: scale(1.16);
+	transform: scale(1.16); /* 116% bigger i think... */
+	transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;;
+}
+#meals img:hover {
+    -webkit-transform: scale(1.1);
+	        transform: scale(1.1); /* back to normal*/
+	opacity: 1; /* back to normal*/
+}
+/*==================How it works Section Components===========*/
+#how-it-works-body img {
+    width: 40%;
+}
+#how-it-works-body .col:first-child {
+    text-align: right;
+}
+#how-it-works-body .box {
+    width: 95%;
+    margin-bottom: 28px;
+    display: inline-block;
+    color: #555;
+}
+#how-it-works-body .box span:first-child {
+    border: 2px solid orange;
+    border-radius: 50%;
+    padding: 7px 12px;
+    color: orange;
+    float: left;
+    /* width: 13%; */
+    display: inline-block;
+}
+#how-it-works-body .box span:nth-child(2) {
+	float: right;
+	width: 88%;
+	font-size: 90%;
+}
+#how-it-works-body .span-1-of-2:last-child {
+    padding-left: 4%;
+}
+#how-it-works-body .store {
+    padding-top: 26%;
+}
+#how-it-works-body .store img:first-child {
+    width: 30%;   
+}
+#how-it-works-body .store img:nth-child(2) {
+    width: 26%;
+}
+/*==================Cities Section Components===========*/
+#cities {
+	color:#555;
+}
+#cities h6 {
+	margin-top: 5%;
+    font-weight: normal;
+}
+#cities #citi-box ul {
+    list-style: none;
+}
+#cities #citi-box ul li {
+    display: block;
+    margin:2%;
+    
+}
+#cities #citi-box ul li i {
+    display: inline-block;
+    color: orange;
+    width: 15%;
+    text-align: center;
+}
+#cities #citi-box ul li span, #cities #citi-box ul li span a {
+    font-size: 83%;
+}
+/*==================Testimonials Section Components===========*/
+#testimonials {
+    color: #FFF;
+}
+#testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/back-customers-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#testimonials h1 {
+    color: #FFF;
+    font-weight: normal;
+}
+#testimonials img {
+    width: 15%;
+    border-radius: 51%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#testimonials blockquote {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding: 2%;
+    word-spacing: 1px;
+    position: relative;
+}
+#testimonials blockquote:before {
+    content: "\201C";
+    font-size: 260%;
+    position: absolute;
+    top: -13px;
+    left: 1px;
+}
+#testimonials cite {
+    display: block;
+    margin-top: 20px;
+    font-size: 95%;
+}
+/*==================Plans Section Components===========*/
+#plans {
+    background-color: #f4f4f4;
+}
+#plans ul li {
+    display: block;
+    margin: 2% 0;
+}
+#plans .span-1-of-3 {
+    background-color: #FFF;
+    /* padding: 2%; */
+}
+#plans p.price-month {
+    margin: 3%;
+    font-size: 179%;
+    color: orange;
+}
+
+#plans p.price-meal {
+    margin: 4% 0;
+}
+
+#plans ul {
+    margin: 3%;
+    color: #555;
+}
+
+#plans i {
+    display: inline-block;
+    width: 25px;
+    color: orange;
+    font-size: 1.2em;
+}
+
+#plans .signup-btn a {
+    color: #FFF;
+    background-color: orange;
+    padding: 4% 6%;
+    border-radius: 23px;
+}
+
+#plans .signup-btn {
+    padding: 6% 0;
+    text-align: center;
+}
+#plans h3 {
+    color: #555;
+    font-weight: normal;
+}
+#plans .border-box {
+    border-bottom: 1px solid rgba(173, 165, 165, 0.46);
+    padding: 3% 4%;
+}
+/*==================Map Section Components===========*/
+#map {
+    background-image: url(img/map.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 408px;
+}
+#map form {
+    background-color: #FFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    opacity: 0.8;
+    padding: 2%;
+}
+form .row {
+    margin: 2%;
+}
+input, textarea {
+    width: 100%;
+}
+input[type="submit"] {
+    width: 35%;
+    border-radius: 6px;
+    background-color: orange;
+    padding: 6px;
+}
+/*=============Footer================*/
+footer {
+    background-color: #333;
+    clear: both;
+    color: #ddd;
+}
+footer ul {
+    margin: 3%;
+}
+footer ul li {
+    padding: 3%;
+    font-size: 71%;
+}
+#rfooter ul {
+    float: right;
+}
+footer i {
+    font-size: 140%;
+    color: #ddd;
+}
+#lfooter li:hover {
+    color: #FFF;
+}
+.ion-social-facebook:hover{
+	color: #3b5998;
+}
+
+.ion-social-twitter:hover{
+	color: #00aced;
+}
+.ion-social-instagram:hover{
+	color: #517fa4;
+}
+.ion-social-googleplus:hover{
+	color: #dd4b39;
+}
+#bottom-footer {
+    clear: both;
+    text-align: center;
+    font-size: 90%;
+    margin-bottom: 4%;
+}

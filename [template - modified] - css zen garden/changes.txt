@@ -1,0 +1,3 @@
+ -> Added height to div.main
+ -> Added min-height:100%; to aside and section
+ -> Changed the order of html elements

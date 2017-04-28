@@ -1,0 +1,6 @@
+body {
+	background: navy;
+	color:#FFF;
+	margin:0 auto;
+	max-width: 980px; /* or width: 980px */
+}

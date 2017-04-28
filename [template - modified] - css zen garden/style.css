@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+header {
+    height: 250px;
+    background: url(images/header.jpg);
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 0; */
+}
+header span {
+    float: right;
+    width: 30%;
+    padding: 69px 0 0 0;
+}
+header span input {
+    height: 60px;
+    background: rgb(130, 160, 181);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 4px;
+    border: 1px solid rgb(168, 168, 169);
+    width: 67%;
+}
+header div {
+    width: 66%;
+    text-align: center;
+    padding: 47px 0 0 0;
+}
+header div h1 {
+    color: #FFF;
+}
+header div h3 {
+    color: rgb(170, 168, 179);
+    width: 93%;
+}
+#nxt {
+    background: url(images/next.png);
+    background-repeat: no-repeat;
+}
+aside {
+    float: right;
+    background: rgb(102, 153, 153);
+    width: 35%;
+	clear:right;
+	min-height:100%;
+}
+ul {
+    list-style-type: none;
+}
+section {
+    width: 65%;
+	min-height:100%;
+    background: rgb(242, 242, 242);
+}
+aside ul,
+section article {
+    padding: 65px;
+    line-height: 26px;
+}
+div.main {
+    font-size: 92%;
+	height:700px; 
+}
+aside ul {
+    width: 65%;
+    float: right;
+    line-height: 12px;
+    margin-top: 1px;
+}
+aside ul li p:nth-child(1),
+aside#as2 ul li {
+    font-size: 120%;
+    color: rgb(106, 220, 198);
+}
+aside ul li p:nth-child(2) {
+    color: rgb(104, 217, 213);
+}
+aside ul li i {
+    color: rgb(242, 242, 242);
+}
+aside#as2 {
+    background: rgb(17, 176, 100);
+}
+aside#as2 ul li {
+    margin: 0 0 31px 0;
+}
+section#se2 {
+    background: rgb(54, 209, 134);
+}
+hr {
+    width: 80%;
+    margin: 25px 0;
+    background: rgb(5, 45, 26);
+    border: 1px solid rgb(54, 209, 134);
+}
+.bot {
+    height: 200px;
+}
+.bot article {
+    text-align: center;
+    padding: 50px;
+    color: rgb(47, 50, 41);
+    background: rgb(123, 159, 55);
+}
+footer {
+    background: rgb(173, 142, 42);
+    height: 100px;
+}
+footer div {
+    //display: inline-block;
+    margin: 0 209px;
+}
+footer div div {
+    width: 60px;
+    height: 58px;
+    float: left;
+    margin: 26px 65px 0 28px;
+}
+footer div div:nth-child(1) {
+    background: url(images/social.png) -23px -23px;
+}
+footer div div:nth-child(2) {
+    background: url(images/social.png) -22px -104px;
+}
+footer div div:nth-child(3) {
+    background: url(images/social.png) -105px -22px;
+}
+footer div div:nth-child(4) {
+    background: url(images/social.png) -105px -104px;
+}
+footer div div:nth-child(5) {
+    background: url(images/social.png) 82px -105px;
+}
+footer div div:nth-child(6) {
+    background: url(images/social.png) -188px -22px;
+}
+footer div div:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

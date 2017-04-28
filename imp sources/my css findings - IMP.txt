@@ -1,0 +1,43 @@
+-> min-height/width , max-height/width in % are applied irrespetive of parent element in DOM.
+-> font-size(%) is applied irrespective of parent element in DOM.
+-> img,span,cite elements are inline elements by default, we cant add margin top/bottom for them.
+-> width = width of element + border + padding.
+-> font-family property chain indicates as if first font family not found by browser then seach for second and vice versa.
+-> margin-left/right "auto" means middle of the document.
+-> By default DOM has static positioning
+-> Releative position means change the position of the static elements(by default).
+-> Absolute position means change the position of non-static (relative position) elements.
+-> Fixed position menas changed as fixed from "root" of the document.
+-> If you want fixed height blocks/grids in the same div, use float for all elements in the div, else if you want un fixed height block/grid then use the float:right for the right side element.
+float elements are not in the DOM flow.
+-> margin: 0 auto works if we provide width of the element.
+-> floating elements are not under part of DOM structure, so style the elements based on the non-float elements.
+-> For any inline elements(span,img,i,a) , if we want to make them center align then we need give display:block peoperty for making it block and then give text-align:center.
+-> :before,:after psedo elements are used to create empty space. We must put content:"" property inside those.
+-> make a common class and give max-width:1140px and margin:0 auto, use this class any where you want to keep elements center in the DOM.
+-> Using icons , if you want to increase the size of the icon, increase the font-size in em or %.
+-> To give the height to an element without define, give margin-bottom.[Omnnifodd->How it works section->Right side steps]
+-> Use <figure> tag for define image whenever you want to put background color for an image(<img> tag).[Omnnifodd->Get food fast section->Image gallery] 
+-> Use transform: scale(1.16);(116% bigger i think) for an image tag to cover bottom white space.[Omnnifodd->Get food fast section->Image gallery] 
+-> Use vertical-align: middle; if you want to place the text in middle.[Omnnifodd->Testimonials section-> in cite tag] 
+-> If there are more elements in a div/section, then give the width otherwise no need (Profile template heaer row div)
+-> http://stackoverflow.com/questions/19354845/div-has-no-height-even-if-it-has-content
+-> background-color can be applied to an element inside the border. Not for the margin of an element.
+-> overflow:hidden used for nice image hover zoom effect.[future-imperfect template - left blocks- image hover]
+-> For any inline elements(span,img,i,a), if we want to give padding or margin first check the width and height of the element, without space around we cant give any margin or padding. So make it inline-block and then give.[future-imperfect template, buttons]
+-> To remove empty space in any parent element , make it children element as display-block.
+-> Linear-gradient for an img tag , implemented in strata template.[Gallery]
+-> I found while using media query for a break point width:100vw caused the horizontal scroll bar, I used width:100% to overcome the problem.[strata template - left side bar]
+-> Navigation hover submenu disappear issue fixed by giving padding bottom [Layered template - nav]
+-> We can't give width for display:inline elements.
+-> Margin: 0 auto works only for display:block elements.
+-> For responsive we design we can use width: % for images.
+-> We can use height for any header or something and we can modify this in media queries.
+-> For centering an image use:-(display: block;  max-width: 200px;    margin: 0 auto;)
+-> If you want to two div's height same in the same row, first compare the two div's and see the text aligns in both div's and give the height value in differntial height element in the div[Ex:- KAITLYN HOVA template , brain section]
+-> If any element has the  background image property , if the that element is not having any child elements we need to give height(width depends), else if that elements having the childs the parent element takes height automatically.
+-> We can't give widht and height for inline elements , it takes width,height auto by default.Make it inline block or block for giving widht and height.[Ex:- KAITLYN HOVA template , footer social media]
+-> Use background image when it has text in the child elements , otherwise it became problem[Ex:- KAITLYN HOVA template , logo]
+-> CSS3 Transitions, for on click, if you give width as auto it will not effect the transition property, if you give the width in px or % , then it will work [Ex:- KAITLYN HOVA template , right hand side aside];
+-> Line-height is important for centering the elements too, an <i> element with icon has the 50% border, good example(KAITLYN HOVA template [.ion-home])
+-> Position: relative, top was not worked in % , but if I give in px it worked for me. [Yoga Club - template, yoga classes section- (i.dot)]
